@@ -22,7 +22,7 @@ class _MyHeaderState extends State<MyHeader> {
     return ClipPath(
       clipper: MyClipper(),
       child: Container(
-        padding: EdgeInsets.only(left: 40, top: 50, right: 20),
+        padding: EdgeInsets.only(left: 50, top: 50, right: 20),
         height: 350,
         width: double.infinity,
         decoration: BoxDecoration(
@@ -30,12 +30,9 @@ class _MyHeaderState extends State<MyHeader> {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
             colors: [
-              Color(0xFF3383CD),
-              Color(0xFF11249F),
+              Colors.orange,
+              Colors.white12,
             ],
-          ),
-          image: DecorationImage(
-            image: AssetImage("assets/images/virus.png"),
           ),
         ),
         child: Column(

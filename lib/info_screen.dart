@@ -42,8 +42,8 @@ class _InfoScreenState extends State<InfoScreen> {
           children: <Widget>[
             MyHeader(
               image: "assets/icons/coronadr.svg",
-              textTop: "Get to know",
-              textBottom: "About Covid-19.",
+              textTop: "DISASTERS",
+              textBottom: "SAFETY TIPS",
               offset: offset,
             ),
             Padding(
@@ -52,7 +52,7 @@ class _InfoScreenState extends State<InfoScreen> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                    "Symptoms",
+                    "Disasters",
                     style: kTitleTextstyle,
                   ),
                   SizedBox(height: 20),
@@ -63,16 +63,16 @@ class _InfoScreenState extends State<InfoScreen> {
                       children: <Widget>[
                         SymptomCard(
                           image: "assets/images/headache.png",
-                          title: "Headache",
+                          title: "House burn",
                           isActive: true,
                         ),
                         SymptomCard(
                           image: "assets/images/caugh.png",
-                          title: "Caugh",
+                          title: "Flood",
                         ),
                         SymptomCard(
                           image: "assets/images/fever.png",
-                          title: "Fever",
+                          title: "Earthquake",
                         ),
                       ],
                     ),
@@ -82,15 +82,15 @@ class _InfoScreenState extends State<InfoScreen> {
                   SizedBox(height: 20),
                   PreventCard(
                     text:
-                        "Since the start of the coronavirus outbreak some places have fully embraced wearing facemasks",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     image: "assets/images/wear_mask.png",
-                    title: "Wear face mask",
+                    title: "LOREM IPSUM",
                   ),
                   PreventCard(
                     text:
-                        "Since the start of the coronavirus outbreak some places have fully embraced wearing facemasks",
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                     image: "assets/images/wash_hands.png",
-                    title: "Wash your hands",
+                    title: "LOREM IPSUM",
                   ),
                   SizedBox(height: 50),
                 ],

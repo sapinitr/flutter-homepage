@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Covid 19',
+      title: 'Homepage',
       theme: ThemeData(
           scaffoldBackgroundColor: kBackgroundColor,
           fontFamily: "Poppins",
@@ -62,12 +62,12 @@ class _HomeScreenState extends State<HomeScreen> {
           children: <Widget>[
             MyHeader(
               image: "assets/icons/Drcorona.svg",
-              textTop: "All you need",
-              textBottom: "is stay at home.",
+              textTop: "NOW IS THE TIME",
+              textBottom: "TO BE RESILIENT.",
               offset: offset,
             ),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 20),
+              margin: EdgeInsets.symmetric(horizontal: 25),
               padding: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
               height: 60,
               width: double.infinity,
@@ -87,12 +87,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       isExpanded: true,
                       underline: SizedBox(),
                       icon: SvgPicture.asset("assets/icons/dropdown.svg"),
-                      value: "Indonesia",
+                      value: "Manila City",
                       items: [
-                        'Indonesia',
-                        'Bangladesh',
-                        'United States',
-                        'Japan'
+                        'Manila City',
+                        'Quezon City',
+                        'Pasig City',
+                        'Makati City'
                       ].map<DropdownMenuItem<String>>((String value) {
                         return DropdownMenuItem<String>(
                           value: value,
@@ -107,7 +107,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             SizedBox(height: 20),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
+              padding: EdgeInsets.symmetric(horizontal: 30),
               child: Column(
                 children: <Widget>[
                   Row(
@@ -116,11 +116,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         text: TextSpan(
                           children: [
                             TextSpan(
-                              text: "Case Update\n",
+                              text: "Case Reports\n",
                               style: kTitleTextstyle,
                             ),
                             TextSpan(
-                              text: "Newest update March 28",
+                              text: "Newest update September 30",
                               style: TextStyle(
                                 color: kTextLightColor,
                               ),
@@ -158,17 +158,17 @@ class _HomeScreenState extends State<HomeScreen> {
                         Counter(
                           color: kInfectedColor,
                           number: 1046,
-                          title: "Infected",
+                          title: "Donations",
                         ),
                         Counter(
                           color: kDeathColor,
                           number: 87,
-                          title: "Deaths",
+                          title: "Reports",
                         ),
                         Counter(
                           color: kRecovercolor,
                           number: 46,
-                          title: "Recovered",
+                          title: "Rescued",
                         ),
                       ],
                     ),
@@ -178,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Text(
-                        "Spread of Virus",
+                        "Heatmap",
                         style: kTitleTextstyle,
                       ),
                       Text(
